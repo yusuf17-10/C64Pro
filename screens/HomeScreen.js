@@ -21,11 +21,11 @@ export default class HomeScreen extends Component{
     try{
       var word = dictionary[text]["word"]
       var lexicalCategory = dictionary[text]["lexicalCategory"]
-      var definition = dictionary[text]["defination"]
+      var definition = dictionary[text]["definition"]
       this.setState({
         "word":word,
         "lexicalCategory":lexicalCategory,
-        "defination":defination
+        "definition":definition
       })
     }
     catch(err){
