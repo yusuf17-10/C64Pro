@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
 import { Header } from 'react-native-elements';
-import dictionary from './database';
+import dictionary from '../database';
 
 export default class HomeScreen extends Component{
   constructor() {
@@ -16,7 +16,7 @@ export default class HomeScreen extends Component{
     };
   }
 
-  getWord=(text)=>{
+  getWord=(text1)=>{
     var text =text.toLowerCase()
     try{
       var word = dictionary[text]["word"]
